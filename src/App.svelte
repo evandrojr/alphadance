@@ -4,6 +4,7 @@
 	function tranformarParaAtividadesPorHora() {
 		let trans=[]; 
 		let transAtividadesPorDia;
+		let transAtividadesAgrupadasPorHora;
 		const nomesAtividades = {f: 'Fitdance', z: 'Zumba' };	
 		
 		atividades.forEach(atividadesPorDia => {
@@ -19,12 +20,20 @@
 					aulasHorarios[1].forEach(horario => {
 						console.log('horario', horario);
 						if(horario==h){
-							transAtividadesPorDia.horarios.push({h: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome }); 
+							transAtividadesPorDia.horarios.push({hora: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome }); 
 						}
 					});
 				});
 			 });
 		 }
+
+		transAtividadesAgrupadasPorHora = transAtividadesPorDia.horarios.reduce(function (r, a) {
+				r[a.hora] = r[a.hora] || [];
+				r[a.hora].push(a);
+				return r;
+		}, Object.create(null));
+		transAtividadesPorDia.horarios= transAtividadesAgrupadasPorHora;
+
 		 trans.push(transAtividadesPorDia);	
 			
 		});
@@ -46,12 +55,13 @@
       border-color: black;
       border-style: solid;
       display: flex;
-	  margin: 1rem;
+	  margin: .2rem;
 	  padding: .2rem;
 
     }
 
     [horario] {
+	  width: 2.5em;	
       padding: 1rem;
 	}
 	
@@ -82,16 +92,18 @@
 
 <div>
 
-{#each tranformarParaAtividadesPorHora() as atividade}
-    <h2>{atividade.diaSemana}</h2>
-    <div atividades-por-horario>
-      <div horario fundo-amarelo>9:10</div>
-      <div>
-        <div local-e-atividade>Pituba: Zumba</div>
-        <div local-e-atividade>Aracaju: Fitdance</div>
-
-      </div>
-    </div>
+{#each tranformarParaAtividadesPorHora() as dia}
+    <h2>{dia.diaSemana}</h2>
+	{#each Object.keys(dia.horarios) as hora}
+		<div atividades-por-horario>
+		<div horario fundo-amarelo>{hora}:10</div>
+		<div>
+		{#each Object.values(dia.horarios[hora]) as aula}
+			<div local-e-atividade>{aula.local}: {aula.atividade}</div>
+		{/each}
+		</div>
+		</div>
+	{/each}
 {/each}
 
  
