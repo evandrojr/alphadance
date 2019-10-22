@@ -1,9 +1,37 @@
 <script>
-	export let name;
 	export let atividades;
 	
 	function tranformarParaAtividadesPorHora() {
-		return atividades;
+		let trans=[]; 
+		let transAtividadesPorDia;
+		const nomesAtividades = {f: 'Fitdance', z: 'Zumba' };	
+		
+		atividades.forEach(atividadesPorDia => {
+			transAtividadesPorDia = {};	
+			transAtividadesPorDia.diaSemana = atividadesPorDia.diaSemana;
+			transAtividadesPorDia.horarios = [];	
+			for(let h=6; h<=20; ++h){
+				atividadesPorDia.locais.forEach(local => {
+			//  console.log('local', local);
+			//  console.log('local.aulas', local.aulas);
+				Object.entries(local.aulas).forEach(aulasHorarios => {
+					console.log('aulasHorarios', aulasHorarios);
+					aulasHorarios[1].forEach(horario => {
+						console.log('horario', horario);
+						if(horario==h){
+							transAtividadesPorDia.horarios.push({h: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome }); 
+						}
+					});
+				});
+			 });
+		 }
+		 trans.push(transAtividadesPorDia);	
+			
+		});
+		
+		console.log('trans',trans);
+		
+		return trans;
   	}
 	
 </script>
@@ -55,7 +83,7 @@
 <div>
 
 {#each tranformarParaAtividadesPorHora() as atividade}
-    <h2>{atividade.dia_semana}</h2>
+    <h2>{atividade.diaSemana}</h2>
     <div atividades-por-horario>
       <div horario fundo-amarelo>9:10</div>
       <div>
@@ -64,8 +92,6 @@
 
       </div>
     </div>
-
-
 {/each}
 
  

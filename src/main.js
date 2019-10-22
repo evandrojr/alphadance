@@ -3,24 +3,29 @@ import App from './App.svelte';
 
 const atividades = [
 	{
-		dia_semana: "Segunda",
+		diaSemana: "Segunda",
 		locais: [
 			{
-				Aracaju: { f: [9], z: [19] },
+				nome: "Aracaju",
+				aulas: { f: [9], z: [19] },
 			},
 			{
-				Pituba: { f: [12, 19], z: [9] }
+				nome: 'Pituba',
+				aulas: { f: [12, 19], z: [9] }
 			}
 		]
-	},
+	}
+	,
 	{
-		dia_semana: "Terça",
+		diaSemana: "Terça",
 		locais: [
 			{
-				Aracaju: { f: [9], z: [19] },
+				nome: "Aracaju",
+				aulas: { f: [9], z: [19] },
 			},
 			{
-				Pituba: { f: [12, 19], z: [9] }
+				nome: 'Pituba',
+				aulas: { f: [12, 19], z: [9] }
 			}
 		]
 	}
@@ -31,7 +36,6 @@ const atividades = [
 const app = new App({
 	target: document.body,
 	props: {
-		name: 'world',
 		atividades: atividades
 	}
 });
