@@ -1,7 +1,10 @@
 <script>
 	export let name;
 	export let atividades;
-	console.log(atividades);
+	
+	function tranformarParaAtividadesPorHora() {
+		return atividades;
+  	}
 	
 </script>
 
@@ -12,41 +15,60 @@
 	}
 
     [atividades-por-horario] {
-      /* border: 1px; */
       border-color: black;
       border-style: solid;
       display: flex;
-      margin: 1rem;
+	  margin: 1rem;
+	  padding: .2rem;
 
     }
 
     [horario] {
       padding: 1rem;
-    }
+	}
+	
+	[topo] {
+		padding: .5em;
+		text-align: center;
+		border-bottom: solid 1px;
+	}
+
+	[preto]{
+		color: #000000;
+	}
+
+	[fundo-amarelo]{
+		background-color: #EEC82F;
+		
+	}
+
+	[local-e-atividade]{
+		padding-left: .5em;
+
+	}
 </style>
 
-<h1>Alphadance</h1>
+<div topo fundo-amarelo>
+<h1 preto>alphadance</h1>
+</div>
 
+<div>
 
-
-
-  <div>
-    <h2>Segunda</h2>
+{#each tranformarParaAtividadesPorHora() as atividade}
+    <h2>{atividade.dia_semana}</h2>
     <div atividades-por-horario>
-      <div horario>9:10</div>
+      <div horario fundo-amarelo>9:10</div>
       <div>
-        <div>Pituba: Zumba</div>
-        <div>Aracaju: Fitdance</div>
+        <div local-e-atividade>Pituba: Zumba</div>
+        <div local-e-atividade>Aracaju: Fitdance</div>
 
       </div>
     </div>
 
-    <div atividades-por-horario>
-      <div horario>19:10</div>
-      <div>
-        <div>Pituba: Fitdance</div>
-      </div>
-    </div>
+
+{/each}
+
+ 
 
 
 
