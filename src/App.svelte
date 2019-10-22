@@ -5,7 +5,7 @@
 		let trans=[]; 
 		let transAtividadesPorDia;
 		let transAtividadesAgrupadasPorHora;
-		const nomesAtividades = {f: 'Fitdance', z: 'Zumba' };	
+		const nomesAtividades = {f: 'FitDance', z: 'Zumba' };	
 		
 		atividades.forEach(atividadesPorDia => {
 			transAtividadesPorDia = {};	
