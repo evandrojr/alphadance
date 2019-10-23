@@ -68,10 +68,6 @@
 		/* border-bottom: solid 1px; */
 	}
 
-	/* [preto]{
-		color: #000000;
-	} */
-
 	[fundo-amarelo] {
 		background-color: #EEC82F;
 
