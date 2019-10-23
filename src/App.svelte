@@ -63,6 +63,7 @@
     [horario] {
 	  width: 2.5em;	
       padding: 1rem;
+	  text-align: center;
 	}
 	
 	[topo] {
