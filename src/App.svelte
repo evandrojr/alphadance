@@ -133,17 +133,13 @@
 </div>
 
 
-	<br><br><br>
+<br><br><br>
 <div rodape>
-	<!-- <div espacador></div>
-	<div> -->
-		<!-- <div> -->
+	
 			Para correções e sugestões fale com Evandro <a
 				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
 				(71)98286-4766</a>
-		<!-- </div> -->
-	<!-- </div>
-	<div espacador></div> -->
+<br><br>
+				Ou corrija diretamente em: <a href="https://github.com/evandrojr/alphadance/blob/master/src/main.js">https://github.com/evandrojr/alphadance/blob/master/src/main.js</a>
 </div>
-
-	<br>
+<br>
