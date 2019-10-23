@@ -5,7 +5,7 @@
 		let trans = [];
 		let transAtividadesPorDia;
 		let transAtividadesAgrupadasPorHora;
-		const nomesAtividades = { f: 'FitDance', z: 'Zumba' };
+		const nomesAtividades = { f: 'FitDance', v: 'Dança do ventre', z: 'Zumba' };
 
 		atividades.forEach(atividadesPorDia => {
 			transAtividadesPorDia = {};
@@ -16,9 +16,9 @@
 					//  console.log('local', local);
 					//  console.log('local.aulas', local.aulas);
 					Object.entries(local.aulas).forEach(aulasHorarios => {
-						console.log('aulasHorarios', aulasHorarios);
+						// console.log('aulasHorarios', aulasHorarios);
 						aulasHorarios[1].forEach(horario => {
-							console.log('horario', horario);
+							// console.log('horario', horario);
 							if (horario == h) {
 								transAtividadesPorDia.horarios.push({ hora: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome });
 							}
@@ -38,7 +38,7 @@
 
 		});
 
-		// console.log('trans', trans);
+		console.log('trans', trans);
 
 		return trans;
 	}
@@ -104,9 +104,9 @@
 		<div>
 			<img src="images/alphadance.png" alt="alphadance">
 		</div>
-		Horários não oficiais das aulas de dança nas unidades da Rede Alpha.
+		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
 		<div><br>
-			Correções e sugestões:<br> <a
+			Correções e sugestões com Evandro<br> <a
 				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
 				(71)98286-4766</a>
 		</div>
