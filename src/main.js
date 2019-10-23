@@ -40,7 +40,7 @@ const atividades = [
 			},
 			{
 				nome: "Caminho das Árvores",
-				aulas: { f: [18], z: [9] },
+				aulas: { f: [19], z: [9] },
 			},
 			{
 				nome: "Costa Azul",
