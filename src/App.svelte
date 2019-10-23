@@ -104,7 +104,7 @@
 		<div>
 			<img src="images/alphadance.png" alt="alphadance">
 		</div>
-		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
+		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
 		<div><br>
 			Correções e sugestões com Evandro<br> <a
 				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
