@@ -87,13 +87,6 @@
 		color: #EEC82F;
 	}
 
-	[centralizador] {
-		width: 30%;
-		/* text-align: center; */
-		/* display: flex; */
-
-	}
-
 	[espacador] {
 		width: 100%;
 	}
@@ -109,22 +102,23 @@
 	<div espacador></div>
 	<div>
 		<img src="images/alphadance.png" alt="alphadance">
-		<!-- <br> -->
-		<span>Horários não oficiais das aulas de dança nas unidades da Rede Alpha. Achou algum erro ou tem alguma
-			sugestão? Contato: <a
-				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">Whatsapp:
-				(71)98286-4766</a>
-		</span>
-
-
+		<br>
+		Horários não oficiais das aulas de dança nas unidades da Rede Alpha.
+		Achou algum erro? <a
+			href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">Whatsapp:
+			(71)98286-4766</a>
 	</div>
 	<div espacador></div>
 </div>
+<br>
+<br>
+<br>
+<br>
 
-
-
-
-{#each tranformarParaAtividadesPorHora() as dia}
+<div programacao>
+	<div espacador></div>
+	<div>
+		{#each tranformarParaAtividadesPorHora() as dia}
 				<h2>{dia.diaSemana}</h2>
 				{#each Object.keys(dia.horarios) as hora}
 					<div atividades-por-horario>
@@ -137,3 +131,6 @@
 					</div>
 				{/each}
 	{/each}
+	</div>
+	<div espacador></div>
+</div>
