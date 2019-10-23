@@ -93,7 +93,12 @@
 
 	[programacao] {
 		display: flex;
+	}
 
+	[rodape] {
+		/* display: flex; */
+		width: 100;
+		text-align: center;
 	}
 </style>
 
@@ -105,11 +110,6 @@
 			<img src="images/alphadance.png" alt="alphadance">
 		</div>
 		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
-		<div><br>
-			Correções e sugestões com Evandro<br> <a
-				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
-				(71)98286-4766</a>
-		</div>
 	</div>
 	<div espacador></div>
 </div>
@@ -135,3 +135,19 @@
 	</div>
 	<div espacador></div>
 </div>
+
+
+	<br><br><br>
+<div rodape>
+	<!-- <div espacador></div>
+	<div> -->
+		<!-- <div> -->
+			Para correções e sugestões fale com Evandro <a
+				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
+				(71)98286-4766</a>
+		<!-- </div> -->
+	<!-- </div>
+	<div espacador></div> -->
+</div>
+
+	<br>
