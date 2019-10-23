@@ -37,12 +37,9 @@
 			trans.push(transAtividadesPorDia);
 
 		});
-
 		console.log('trans', trans);
-
 		return trans;
 	}
-
 </script>
 
 <style>
@@ -50,6 +47,7 @@
 		border-color: #200939;
 		border-style: solid;
 		display: flex;
+		margin: .2em;
 	}
 
 	[horario] {
@@ -60,17 +58,11 @@
 	}
 
 	[topo] {
-		/* padding: .1em; */
-		/* text-align: center; */
 		display: flex;
-		/* flex-direction: column; */
-		/* padding: 1rem; */
-		/* border-bottom: solid 1px; */
 	}
 
 	[fundo-amarelo] {
 		background-color: #EEC82F;
-
 	}
 
 	[local-e-atividade] {
@@ -92,7 +84,6 @@
 	}
 
 	[rodape] {
-		/* display: flex; */
 		width: 100;
 		text-align: center;
 	}
