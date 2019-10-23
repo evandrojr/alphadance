@@ -6,7 +6,7 @@ const atividades = [
 		diaSemana: "Segunda",
 		locais: [
 			{
-				nome: "Aracaju",
+				nome: "Aracaju teste",
 				aulas: { f: [9], z: [19] },
 			},
 			{
