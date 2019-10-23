@@ -131,6 +131,6 @@
 				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
 				(71)98286-4766</a>
 <br><br>
-				Ou corrija diretamente em: <a href="https://github.com/evandrojr/alphadance/blob/master/src/main.js">https://github.com/evandrojr/alphadance/blob/master/src/main.js</a>
+				Ou corrija diretamente <a href="https://github.com/evandrojr/alphadance/blob/master/src/main.js">aqui.</a>
 </div>
 <br>
