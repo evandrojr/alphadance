@@ -1,3 +1,51 @@
 .DS_Store
 node_modules
 public/bundle.*
+
+
+# Non-project-specific build files:
+# build.xml
+# local.properties
+# /gradlew
+# /gradlew.bat
+# /gradle
+# # Ant builds
+# ant-build
+# ant-gen
+# # Eclipse builds
+# gen
+# out
+# # Gradle build artifacts
+# .gradle
+# .gradletasknamecache
+# /build
+# /CordovaLib/build
+# /app/build
+# gradle-app.setting
+# # Android Studio
+# .idea
+
+
+
+# Non-project-specific build files:
+build.xml
+local.properties
+/cordova/gradlew
+/cordova/gradlew.bat
+/cordova/gradle
+# /cordova/platforms
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+/cordova/gen
+/cordova/out
+# Gradle build artifacts
+/cordova/.gradle
+/cordova/.gradletasknamecache
+/build
+/CordovaLib/build
+/app/build
+gradle-app.setting
+# Android Studio
+.idea
