@@ -53,6 +53,8 @@
 		border-style: solid;
 		display: flex;
 		margin: .2em;
+		border-style: solid;
+		border-color: #EEC82F;
 	}
 
 	[horario] {
@@ -62,8 +64,22 @@
 		color: #200939;
 	}
 
+	[base] {
+		display: flex;
+		flex-direction: column;
+		border-style: solid;
+		border-color: #EEC82F;
+		align-items: center;
+	}
+
 	[topo] {
 		display: flex;
+		border-style: solid;
+		border-color: #EEC82F;
+		justify-content: center;
+		flex-direction: column;
+		width: 70%;
+		text-align: justify;
 	}
 
 	[fundo-amarelo] {
@@ -74,6 +90,9 @@
 		padding-left: .5em;
 		width: 500px;
 		text-align: left;
+		border-style: solid;
+		border-color: #EEC82F;
+
 	}
 
 	a {
@@ -82,10 +101,16 @@
 
 	[espacador] {
 		width: 80%;
+		border-style: solid;
+		border-color: #EEC82F;
+
 	}
 
 	[programacao] {
 		display: flex;
+		border-style: solid;
+		border-color: #EEC82F;
+
 	}
 
 	[rodape] {
@@ -98,21 +123,15 @@
 	}
 </style>
 
-
-<div topo>
-	<div espacador></div>
-	<div>
-		<div>
-			<img src="images/alphadance.png" alt="alphadance">
-		</div>
+<div base>
+	<div topo>
+		<img src="images/alphadance.png" alt="alphadance">
 		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa
 		Azul, Itaigara e Shopping Bella Vista.
 	</div>
-	<div espacador></div>
 </div>
 <br>
 <br>
-
 <div programacao>
 	<div espacador></div>
 	<div>
