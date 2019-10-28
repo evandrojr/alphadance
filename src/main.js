@@ -23,7 +23,7 @@ const atividades = [
 			},
 			{
 				nome: 'Pituba',
-				aulas: { f: [12, 19], z: [9] }
+				aulas: { f: [{ p: 'Jader', h: 12 }, { p: 'Beijinho', h: 19 }], z: [9] }
 			},
 			{
 				nome: 'Shopping Bella Vista',

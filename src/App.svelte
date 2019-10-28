@@ -20,7 +20,11 @@
 						aulasHorarios[1].forEach(horario => {
 							// console.log('horario', horario);
 							if (horario == h) {
-								transAtividadesPorDia.horarios.push({ hora: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome });
+								transAtividadesPorDia.horarios.push({ hora: horario, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome, professor: '' });
+							} else {
+								if (horario.h == h) {
+									transAtividadesPorDia.horarios.push({ hora: horario.h, atividade: nomesAtividades[aulasHorarios[0]], local: local.nome, professor: horario.p });
+								}
 							}
 						});
 					});
@@ -87,6 +91,10 @@
 		width: 100;
 		text-align: center;
 	}
+
+	[professor] {
+		color: #EEC82F;
+	}
 </style>
 
 
@@ -96,7 +104,8 @@
 		<div>
 			<img src="images/alphadance.png" alt="alphadance">
 		</div>
-		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
+		Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa
+		Azul, Itaigara e Shopping Bella Vista.
 	</div>
 	<div espacador></div>
 </div>
@@ -113,7 +122,11 @@
 						<div horario fundo-amarelo>{hora}:10</div>
 							<div>
 								{#each Object.values(dia.horarios[hora]) as aula}
-									<div local-e-atividade>{aula.local}: {aula.atividade}</div>
+									{#if aula.professor}
+										<div local-e-atividade>{aula.local}: {aula.atividade}, professor: <span professor>{aula.professor}</span></div>
+									{:else}
+										<div local-e-atividade>{aula.local}: {aula.atividade}</div>
+									{/if}
 								{/each}
 							</div>
 					</div>
