@@ -2,6 +2,7 @@
 node_modules
 public/bundle.*
 
+cordova/alphadance.apk
 
 # Non-project-specific build files:
 # build.xml
@@ -49,3 +50,4 @@ ant-gen
 gradle-app.setting
 # Android Studio
 .idea
+/cordova/www
