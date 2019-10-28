@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.appsdmtech.alphadance" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.gmail.appsdmtech.alphadance" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>alphadance</name>
     <description>
        Horários não oficiais das aulas de dança nas unidades da Rede Alpha em: Aracaju, Caminho das Árvores, Costa Azul, Itaigara e Shopping Bella Vista.
@@ -19,6 +19,12 @@
     <allow-intent href="whatsapp:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <icon src="platforms/android/app/src/main/res/mipmap-ldpi/icon.png" density="ldpi" />
+        <icon src="platforms/android/app/src/main/res/mipmap-mdpi/icon.png" density="mdpi" />
+        <icon src="platforms/android/app/src/main/res/mipmap-hdpi/icon.png" density="hdpi" />
+        <icon src="platforms/android/app/src/main/res/mipmap-xhdpi/icon.png" density="xhdpi" />
+        <icon src="platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png" density="xxhdpi" />
+        <icon src="platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png" density="xxxhdpi" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
