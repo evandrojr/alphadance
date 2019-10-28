@@ -5,7 +5,8 @@
 		let trans = [];
 		let transAtividadesPorDia;
 		let transAtividadesAgrupadasPorHora;
-		const nomesAtividades = { f: 'FitDance', v: 'Dança do ventre', z: 'Zumba' };
+
+		const nomesAtividades = { f: '<font color="#BA0B69">FitDance</font>', v: 'Dança do ventre', z: '<font color="#CDD854">Zumba</font>' };
 
 		atividades.forEach(atividadesPorDia => {
 			transAtividadesPorDia = {};
@@ -93,7 +94,7 @@
 	}
 
 	[professor] {
-		color: #EEC82F;
+		color: #8BAA6B;
 	}
 </style>
 
@@ -123,9 +124,9 @@
 							<div>
 								{#each Object.values(dia.horarios[hora]) as aula}
 									{#if aula.professor}
-										<div local-e-atividade>{aula.local}: {aula.atividade}, professor: <span professor>{aula.professor}</span></div>
+										<div local-e-atividade>{aula.local}: {@html aula.atividade}, instrutor: <span professor>{aula.professor}</span></div>
 									{:else}
-										<div local-e-atividade>{aula.local}: {aula.atividade}</div>
+										<div local-e-atividade>{aula.local}: {@html aula.atividade}</div>
 									{/if}
 								{/each}
 							</div>

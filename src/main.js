@@ -27,7 +27,7 @@ const atividades = [
 			},
 			{
 				nome: 'Shopping Bella Vista',
-				aulas: { f: [8] }
+				aulas: { f: [{ p: 'Jader', h: 8 }] }
 			}
 		]
 	},
@@ -48,7 +48,7 @@ const atividades = [
 			},
 			{
 				nome: 'Itaigara',
-				aulas: { f: [9, 19] }
+				aulas: { f: [{ p: 'Breno', h: 9 }, { p: 'Piano', h: 19 }] }
 			},
 			{
 				nome: 'Pituba',
@@ -73,7 +73,7 @@ const atividades = [
 			},
 			{
 				nome: 'Pituba',
-				aulas: { f: [7, 18, 19], z: [9] }
+				aulas: { f: [7, { p: 'Jader', h: 18 }, { p: 'Beijinho', h: 19 }], z: [9] }
 			},
 			{
 				nome: 'Itaigara',
@@ -106,7 +106,7 @@ const atividades = [
 			},
 			{
 				nome: 'Itaigara',
-				aulas: { f: [9, 19] }
+				aulas: { f: [{ p: 'Breno', h: 9 }, { p: 'Piano', h: 19 }] }
 			},
 			{
 				nome: 'Shopping Bella Vista',
@@ -127,11 +127,11 @@ const atividades = [
 			},
 			{
 				nome: "Costa Azul",
-				aulas: { f: [19], z: [7] },
+				aulas: { f: [{ p: 'Jader', h: 19 }], z: [7] },
 			},
 			{
 				nome: 'Pituba',
-				aulas: { f: [12], z: [18] }
+				aulas: { f: [{ p: 'Jader', h: 12 }], z: [18] }
 			},
 
 			{
@@ -145,7 +145,7 @@ const atividades = [
 		locais: [
 			{
 				nome: "Aracaju",
-				aulas: { f: [11] },
+				aulas: { f: [{ p: 'Wagner', h: 11 }] },
 			},
 			{
 				nome: "Costa Azul",
@@ -153,11 +153,11 @@ const atividades = [
 			},
 			{
 				nome: 'Pituba',
-				aulas: { f: [11] }
+				aulas: { f: [{ p: 'Beijinho', h: 11 }] }
 			},
 			{
 				nome: 'Itaigara',
-				aulas: { f: [10] }
+				aulas: { f: [{ p: 'Breno', h: 10 }] }
 			},
 			{
 				nome: 'Shopping Bella Vista',
