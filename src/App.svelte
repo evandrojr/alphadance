@@ -114,6 +114,7 @@
 		/* border-style: solid;
 		border-color: #EEC82F; */
 		align-items: center;
+		/* justify-content: center; */
 		/* width: 100%; */
 	}
 
@@ -146,7 +147,8 @@
 
 	[programacao] {
 		/* display: flex; */
-		width: 95%;
+		width: 90%;
+		min-width: 60%;
 		/* border-style: solid;
 		border-color: #EEC82F; */
 
@@ -195,7 +197,8 @@
 
 <div opcoes text-align-center>
 	<input type="checkbox" bind:checked={fitdanceCheckbox} checked={fitdanceCheckbox} on:click={toggleFitdance}>
-	<div inline fitdance-cor on:click={toggleFitdance}>FitDance</div>&nbsp;
+	<div inline fitdance-cor on:click={toggleFitdance}>FitDance</div>
+	&nbsp;&nbsp;&nbsp;
 	<input type="checkbox" bind:checked={zumbaCheckbox} checked={zumbaCheckbox} on:click={toggleZumba}>
 	<div inline zumba-cor on:click={toggleZumba}>Zumba</div>
 </div>
@@ -225,8 +228,8 @@
 </div>
 <br><br><br>
 <div rodape>
-			Para correções e sugestões fale com Evandro <a
-				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%2C%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">WhatsApp:
+			Para correções e sugestões fale com: <a
+				href="https://api.whatsapp.com/send?phone=5571982864766&text=Ol%C3%A1%2C%20tenho%20uma%20sugest%C3%A3o%20sobre%20o%20alphadance.">Evandro WhatsApp:
 				(71)98286-4766</a>
 <br><br>
 				Ou corrija diretamente <a href="https://github.com/evandrojr/alphadance/blob/master/src/main.js">aqui.</a>
